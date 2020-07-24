@@ -53,3 +53,25 @@ body{
 	background-color: #2FBE70;
 	border: none;
 }
+#lastPart{
+	border: 1px solid orangered;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px gray;
+	background-color: orangered;
+	color: white;
+	padding: 20px;
+	margin: 20px 300px;
+	margin-top: 300px;
+	
+}
+#lastPart:hover{
+	background-color: cyan;
+	color: black;
+	border: 1px solid cyan;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px gray;
+}
+
+#container2{
+	display: none;
+}

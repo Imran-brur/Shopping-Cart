@@ -55,6 +55,10 @@
       const numberStr = 1;
       const number = parseFloat(numberStr);
       const totalDecrease = inputNumberItem - number;
+      if(inputItem <= 0){
+        alert('Not defined');
+        inputItem = 0;
+      }
       document.getElementById(id3).value = totalDecrease;
       // decrease newPriceItem
       const fixedNumberPrice = parseFloat(fixedPrice);
@@ -76,3 +80,24 @@
       const newTotalCost = newSubtotal - newTaxCost;
       document.getElementById('totalCost').innerText = newTotalCost;
     }
+
+  // removeItem
+  removeItem('removeItem1','cartItem1');
+  removeItem('removeItem2','cartItem2');
+
+  function removeItem(id5, id6){
+    const removeItem2 = document.getElementById(id5);
+    removeItem2.addEventListener('click', function(){
+    const cartItem2 = document.getElementById(id6);
+    cartItem2.style.display = "none";
+  })
+}
+
+ //checkButton
+ const checkButton = document.getElementById('checkButton');
+ checkButton.addEventListener('click', function(){
+   const lastPart = document.getElementById('container1');
+   lastPart.style.display = "none";
+   const container2 = document.getElementById('container2');
+   container2.style.display = "block";
+ })
